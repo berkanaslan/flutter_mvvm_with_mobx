@@ -9,7 +9,7 @@ part 'post-view-model.g.dart';
 class PostViewModel = _PostViewModelBase with _$PostViewModel;
 
 abstract class _PostViewModelBase with Store {
-  final String url = "https://jsonplaceholder.typicode.com/posts/";
+  final String url = "https://jsonplaceholder.typicode.com/posts";
 
   @observable
   List<Post> posts = [];
