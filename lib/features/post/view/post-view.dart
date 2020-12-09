@@ -21,6 +21,7 @@ class PostView extends StatelessWidget {
         ],
       ),
       floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.get_app_outlined),
         onPressed: () {
           _viewModel.getAllPosts();
         },
@@ -57,7 +58,7 @@ class PostView extends StatelessWidget {
       leading: Text(_viewModel.posts[index].userId.toString()),
       title: Text(_viewModel.posts[index].title),
       subtitle: Text(_viewModel.posts[index].body),
-      trailing: Text(_viewModel.posts[index].userId.toString()),
+      trailing: Text(_viewModel.posts[index].id.toString()),
     );
   }
 }
